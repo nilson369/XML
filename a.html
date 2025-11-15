@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Producto</title>
+  <style>
+    body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+    form { background: white; padding: 20px; width: 300px; margin: auto; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
+    input, button { width: 100%; padding: 10px; margin-top: 10px; }
+    button { background: #0078D7; color: white; border: none; cursor: pointer; }
+    button:hover { background: #005fa3; }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Registro de Productos</h2>
+
+  <form action="a.php" method="POST">
+    <label>ID del producto:</label>
+    <input type="number" name="id" required>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Precio (S/.):</label>
+    <input type="number" name="precio" step="0.01" required>
+
+    <label>Categoría:</label>
+    <input type="text" name="categoria" required>
+
+    <button type="submit">Guardar en XML</button>
+  </form>
+
+</body>
+</html>
